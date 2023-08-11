@@ -28,7 +28,11 @@ const Explanation = ({
         <p className="leading-relaxed lg:mx-0 font-medium text-[#6F7278] text-[18px] mb-5">
           {content}
         </p>
-        {btn && <BasicButton className="w-60 h-12">Chat with me</BasicButton>}
+        {btn && (
+          <BasicButton className="bg-[#055f5b] hover:bg-[#0c1c1b] w-60 h-12">
+            Chat with me
+          </BasicButton>
+        )}
       </div>
     </div>
   );

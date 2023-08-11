@@ -276,7 +276,9 @@ const About = () => {
               />
             ))}
           </div>
-          <BasicButton className="mt-10 w-1/5">Join the team</BasicButton>
+          <BasicButton className="bg-[#055f5b] hover:bg-[#0c1c1b] mt-10 w-1/5">
+            Join the team
+          </BasicButton>
         </AnimateInView>
       </motion.div>
       <motion.div>

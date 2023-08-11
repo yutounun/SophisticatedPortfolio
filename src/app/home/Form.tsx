@@ -49,17 +49,9 @@ const Form = () => {
         />
       </form>
       <div className="mb-10">
-        <p className="mx-16 lg:mx-24 mb-10 text-[18px] text-[#6f7278] font-medium ">
-          By clicking on send you agree to{" "}
-          <a
-            href="https://daisyui.com/components/input/"
-            className="font-bold border-b border-b-primary text-primary"
-          >
-            our privacy policy
-          </a>
-          .
-        </p>
-        <BasicButton className="w-40 h-10">submit</BasicButton>
+        <BasicButton className="bg-[#055f5b] hover:bg-[#0c1c1b] w-40 h-10">
+          submit
+        </BasicButton>
       </div>
     </div>
   );
