@@ -8,8 +8,8 @@ import Burger from "./common/Burger";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Website Title",
-  description: "Website Description",
+  title: "Yuto Ichihara",
+  description: "Portfolio Page",
 };
 
 export default function RootLayout({
@@ -21,7 +21,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {/* <Burger /> */}
         <div className="flex h-full">
           <main className="w-full">{children}</main>
         </div>
