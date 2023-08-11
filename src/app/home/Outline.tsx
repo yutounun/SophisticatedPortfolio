@@ -47,7 +47,7 @@ const Outline = () => {
               </IconContext.Provider>
             </AnimateInView>
             <p className="text-[2rem] lg:text-[3rem] text-white font-bold">
-              Let's collaborate to elevate your business through tailored
+              Let&apos;s collaborate to elevate your business through tailored
               development!
             </p>
             <p className="text-white text-xl font-bold my-5">

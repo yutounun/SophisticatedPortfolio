@@ -25,7 +25,7 @@ const Explanation = ({
         <h2 className="lg:mx-0 w-full font-bold  text-primary tracking-wide text-4xl my-5">
           {title}
         </h2>
-        <p className="leading-relaxed lg:mx-0 font-medium text-[#6F7278] text-[18px] mb-5">
+        <p className="leading-relaxed lg:mx-0 font-medium text-[#6F7278] text-[18px] mb-10">
           {content}
         </p>
         {btn && (
