@@ -3,27 +3,33 @@ import AnimateInView from "../common/AnimateInView";
 import { motion } from "framer-motion";
 import variants from "../common/Animation";
 import Explanation from "../common/Explanation";
+import Link from "../../../node_modules/next/link";
 
 const Project = ({
   reverse,
   subtitle,
   title,
   content,
+  src,
   imgClassName,
+  url,
 }: {
   reverse?: boolean;
   subtitle: string;
   title: string;
   content: string;
+  src: string;
   imgClassName: string;
+  url: string;
 }) => {
   return (
     <div className="block lg:flex lg:justify-center lg:gap-32 mx-10 my-10">
       {reverse ? (
-        // portrait
+        // image on the right
         <>
           <Explanation
             subtitle={subtitle}
+            url={url}
             content={content}
             title={title}
             className="w-full lg:w-1/2 lg:flex lg:justify-end lg:mt-40"
@@ -38,15 +44,17 @@ const Project = ({
             variants={variants}
             className={`w-full lg:flex lg:justify-start lg:w-1/2`}
           >
-            <img
-              src="./colleagues.png"
-              alt="colleagues"
-              className={`rounded-2xl mb-10 lg:mb-0 h-full  ${imgClassName} `}
-            />
+            <Link href={url} className="h-full w-full">
+              <img
+                src={src}
+                alt="colleagues"
+                className={`rounded-2xl mb-10 lg:mb-0 h-full ${imgClassName} `}
+              />
+            </Link>
           </motion.div>
         </>
       ) : (
-        // Landscape
+        // image on the left
         <>
           <motion.div
             whileHover={{
@@ -55,18 +63,21 @@ const Project = ({
             }}
             whileTap={{ scale: 0.9 }}
             variants={variants}
-            className={`w-full lg:flex lg:justify-end lg:w-1/2`}
+            className={`w-full lg:w-1/2`}
           >
-            <img
-              src="./colleagues.png"
-              alt="colleagues"
-              className={`rounded-2xl mb-10 lg:mb-0 h-full  ${imgClassName}`}
-            />
+            <Link href={url} className="h-full w-full lg:flex lg:justify-end">
+              <img
+                src={src}
+                alt="colleagues"
+                className={`rounded-2xl mb-10 lg:mb-0 h-full ${imgClassName}`}
+              />
+            </Link>
           </motion.div>
           <Explanation
             subtitle={subtitle}
             content={content}
             title={title}
+            url={url}
             className="w-full lg:w-1/2 lg:flex lg:justify-start lg:mt-40"
             btn
           />

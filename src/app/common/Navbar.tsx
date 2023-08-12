@@ -47,12 +47,20 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/about"
+              href="/skills"
               className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-                pathname === "/about" && "border-b-2 border-b-[#ff6d3f]"
+                pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
               }`}
             >
-              About
+              Career
+            </Link>
+            <Link
+              href="/skills"
+              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
+                pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+              }`}
+            >
+              Projects
             </Link>
             <Link
               href="https://devwhisperer.gatsbyjs.io/"
@@ -82,12 +90,28 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/about"
+          href="/skills"
           className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-            pathname === "/about" && "border-b-2 border-b-[#ff6d3f]"
+            pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
           }`}
         >
-          About
+          Career
+        </Link>
+        <Link
+          href="/skills"
+          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
+            pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+          }`}
+        >
+          Projects
+        </Link>
+        <Link
+          href="/skills"
+          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
+            pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+          }`}
+        >
+          Career
         </Link>
         <Link
           href="https://devwhisperer.gatsbyjs.io/"

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import BasicButton from "./BasicButton";
 
 type PropType = {
@@ -7,6 +8,7 @@ type PropType = {
   content: string;
   className: string;
   btn?: boolean;
+  url: string;
 };
 
 const Explanation = ({
@@ -15,6 +17,7 @@ const Explanation = ({
   title,
   content,
   btn,
+  url,
 }: PropType) => {
   return (
     <div className={`${className}`}>
@@ -29,9 +32,11 @@ const Explanation = ({
           {content}
         </p>
         {btn && (
-          <BasicButton className="bg-[#055f5b] hover:bg-[#0c1c1b] w-60 h-12">
-            Chat with me
-          </BasicButton>
+          <Link href={url}>
+            <BasicButton className="bg-[#055f5b] hover:bg-[#0c1c1b] w-60 h-12">
+              Explore More
+            </BasicButton>
+          </Link>
         )}
       </div>
     </div>

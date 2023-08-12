@@ -5,10 +5,12 @@ const CompanyLogo = ({
   variants,
   image,
   src,
+  fav,
 }: {
   variants: any;
   image: string;
   src: string;
+  fav?: boolean;
 }) => (
   <motion.div
     whileHover={{
@@ -19,7 +21,13 @@ const CompanyLogo = ({
     variants={variants}
   >
     <Link href={src}>
-      <img src={image} alt={image} className="h-20 w-32 lg:h-32 kg:w-40"></img>
+      <img
+        src={image}
+        alt={image}
+        className={`h-20 w-32 lg:h-32 kg:w-40 p-2 ${
+          fav && "border-2 border-success rounded-full"
+        } `}
+      ></img>
     </Link>
   </motion.div>
 );
