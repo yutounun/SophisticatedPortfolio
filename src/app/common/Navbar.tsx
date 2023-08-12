@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
 
-import Logo from "../../../public/logo.svg";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {

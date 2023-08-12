@@ -8,9 +8,9 @@ import {
   AiFillGithub,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import Impact from "./Impact";
 import Form from "./Form";
 import { IconContext } from "react-icons";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -37,7 +37,14 @@ const Contact = () => {
               contact form.
             </p>
             <div className="flex justify-center items lg:inline-block lg:w-full">
-              <button className=" rounded-full h-16 bg-[#055f5b] text-xl text-white hover:bg-[#0c1c1b] mt-5 lg:flex gap-3 items-center">
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.2 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                className=" rounded-full h-16 bg-[#055f5b] text-xl text-white hover:bg-[#0c1c1b] mt-5 lg:flex gap-3 items-center"
+              >
                 <div className="flex justify-center items-center mx-5">
                   <IconContext.Provider
                     value={{
@@ -54,7 +61,7 @@ const Contact = () => {
                     geek.yuto@gmail.com
                   </Link>
                 </div>
-              </button>
+              </motion.button>
             </div>
             {/* Accounts */}
             <div className="flex gap-4 ml-5 mt-3">

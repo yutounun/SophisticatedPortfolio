@@ -23,7 +23,6 @@ export default function RootLayout({
         <div className="flex h-full">
           <main className="w-full">{children}</main>
         </div>
-        <Footer />
       </body>
     </html>
   );

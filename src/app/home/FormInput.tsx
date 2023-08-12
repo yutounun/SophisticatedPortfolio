@@ -6,6 +6,7 @@ type PropTypes = {
   inputClassName?: string;
   className?: string;
   children?: ReactNode;
+  name: string;
 };
 
 const FormInput = ({
@@ -13,6 +14,7 @@ const FormInput = ({
   className,
   children,
   inputClassName,
+  name,
 }: PropTypes) => {
   return (
     <span
@@ -22,6 +24,7 @@ const FormInput = ({
         type="text"
         className={`h-full ml-3 ${inputClassName}`}
         placeholder={placeholder}
+        name={name}
       />
       <IconContext.Provider
         value={{ color: "#caccd1", className: "text-3xl mr-3" }}
