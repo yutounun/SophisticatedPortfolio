@@ -11,7 +11,7 @@ import SquareButton from "../common/SquareButton";
 const Outline = () => {
   return (
     <>
-      <div className="lg:flex">
+      <div className="lg:flex" id="about">
         <div className="h-full bg-[#1c3534] lg:w-1/2 pb-20">
           <AnimateInView
             tag="div"
@@ -36,7 +36,7 @@ const Outline = () => {
               >
                 <AiOutlineLine />
               </IconContext.Provider>
-              Konnichiwa !! I&apos;m Yuto
+              Frontend / Full-stack Developer
               <IconContext.Provider
                 value={{
                   color: "success",
@@ -47,11 +47,11 @@ const Outline = () => {
               </IconContext.Provider>
             </AnimateInView>
             <p className="text-[2rem] lg:text-[3rem] text-white font-bold">
-              Let&apos;s collaborate to elevate your business through tailored
-              development!
+              Konnichiwa !! I&apos;m Yuto
             </p>
             <p className="text-white text-xl font-bold my-5">
-              Frontend / Full-stack Developer
+              Let&apos;s collaborate to elevate your business through tailored
+              development!
             </p>
             <div className="flex justify-center lg:inline-block lg:w-full">
               <SquareButton className="bg-[#fc764d] hover:bg-[hsl(14,99%,60%)] h-5 w-1/2 lg:w-1/3">

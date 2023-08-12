@@ -15,7 +15,10 @@ import { IconContext } from "react-icons";
 const Contact = () => {
   return (
     <>
-      <div className="h-full bg-[#fbf9f8] mx-auto pt-10 lg:lg:px-32 lg:flex justify-center pb-10">
+      <div
+        id="contact"
+        className="h-full bg-[#fbf9f8] mx-auto pt-10 lg:lg:px-32 lg:flex justify-center pb-10"
+      >
         <AnimateInView
           tag="div"
           variants={variants.fadeInUp}
@@ -33,22 +36,24 @@ const Contact = () => {
               questions or suggestions? Please send me an email or use our
               contact form.
             </p>
-            <div className="flex justify-center lg:inline-block lg:w-full">
-              <button className="flex rounded-full w-8/12 lg:w-6/12 h-16 bg-[#055f5b] text-xl text-white hover:bg-[#0c1c1b] mt-5 lg:flex gap-3 items-center">
-                <IconContext.Provider
-                  value={{
-                    color: "white",
-                    className: "text-2xl lg:text-4xl ml-6",
-                  }}
-                >
-                  <MdMail />
-                </IconContext.Provider>
-                <Link
-                  href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=geek.yuto%40gmail.com"
-                  className="text-lg lg:ml-1"
-                >
-                  geek.yuto@gmail.com
-                </Link>
+            <div className="flex justify-center items lg:inline-block lg:w-full">
+              <button className=" rounded-full h-16 bg-[#055f5b] text-xl text-white hover:bg-[#0c1c1b] mt-5 lg:flex gap-3 items-center">
+                <div className="flex justify-center items-center mx-5">
+                  <IconContext.Provider
+                    value={{
+                      color: "white",
+                      className: "text-2xl lg:text-4xl",
+                    }}
+                  >
+                    <MdMail />
+                  </IconContext.Provider>
+                  <Link
+                    href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=geek.yuto%40gmail.com"
+                    className="text-lg lg:ml-1"
+                  >
+                    geek.yuto@gmail.com
+                  </Link>
+                </div>
               </button>
             </div>
             {/* Accounts */}

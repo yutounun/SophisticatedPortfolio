@@ -4,7 +4,7 @@ import Project from "./Project";
 const ProjectList = () => {
   return (
     <>
-      <div className="h-full bg-gray-10 py-10">
+      <div className="h-full bg-gray-10 py-10" id="projects">
         {/* Website Template */}
         <Project
           subtitle="Responsive Static Website"

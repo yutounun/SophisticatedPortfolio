@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 
 import Link from "next/link";
+import { Link as Scroll } from "react-scroll";
 
 import Logo from "../../../public/logo.svg";
 import { usePathname } from "next/navigation";
@@ -10,6 +11,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const [selected, setSelected] = useState("about");
   return (
     <div className="h-32 lg:flex justify-between border-b sticky w-full top-0 z-50 bg-white">
       {/* Burger Menu */}
@@ -38,34 +40,80 @@ const Navbar = () => {
       {isOpen && (
         <div className="w-full lg:hidden absolute mt-32">
           <ul className="flex flex-col gap-5 pt-5 bg-gray-10 h-screen opacity-95">
-            <Link
-              href="/home"
+            <Scroll
+              to="about"
+              smooth={true}
+              duration={600}
+              offset={-30}
               className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
-                pathname === "/home" && "border-b-2 border-b-[#ff6d3f]"
+                selected === "about" && "border-b-2 border-b-[#ff6d3f]"
               }`}
+              onClick={() => {
+                setSelected("about");
+              }}
             >
-              Home
-            </Link>
-            <Link
-              href="/skills"
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-                pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+              About
+            </Scroll>
+            <Scroll
+              to="skills"
+              smooth={true}
+              duration={600}
+              offset={-30}
+              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+                selected === "skills" && "border-b-2 border-b-[#ff6d3f]"
               }`}
+              onClick={() => {
+                setSelected("skills");
+              }}
             >
-              Career
-            </Link>
-            <Link
-              href="/skills"
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-                pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+              Skills
+            </Scroll>
+            <Scroll
+              to="projects"
+              smooth={true}
+              duration={600}
+              offset={-30}
+              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+                selected === "projects" && "border-b-2 border-b-[#ff6d3f]"
               }`}
+              onClick={() => {
+                setSelected("projects");
+              }}
             >
               Projects
-            </Link>
+            </Scroll>
+            <Scroll
+              to="about"
+              smooth={true}
+              duration={600}
+              offset={-30}
+              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+                selected === "home" && "border-b-2 border-b-[#ff6d3f]"
+              }`}
+              onClick={() => {
+                setSelected("career");
+              }}
+            >
+              Career
+            </Scroll>
+            <Scroll
+              to="contact"
+              smooth={true}
+              duration={600}
+              offset={-30}
+              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+                selected === "/contact" && "border-b-2 border-b-[#ff6d3f]"
+              }`}
+              onClick={() => {
+                setSelected("contact");
+              }}
+            >
+              Contact
+            </Scroll>
             <Link
               href="https://devwhisperer.gatsbyjs.io/"
               className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-                pathname === "/blog" && "border-b-2 border-b-[#ff6d3f]"
+                selected === "blog" && "border-b-2 border-b-[#ff6d3f]"
               }`}
             >
               Blog
@@ -81,42 +129,80 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hidden w-1/2 lg:flex justify-end mr-32 my-auto">
-        <Link
-          href="/home"
+        <Scroll
+          to="about"
+          smooth={true}
+          duration={600}
+          offset={-30}
           className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
-            pathname === "/home" && "border-b-2 border-b-[#ff6d3f]"
+            selected === "about" && "border-b-2 border-b-[#ff6d3f]"
           }`}
+          onClick={() => {
+            setSelected("about");
+          }}
         >
-          Home
-        </Link>
-        <Link
-          href="/skills"
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-            pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+          About
+        </Scroll>
+        <Scroll
+          to="skills"
+          smooth={true}
+          duration={600}
+          offset={-30}
+          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+            selected === "skills" && "border-b-2 border-b-[#ff6d3f]"
           }`}
+          onClick={() => {
+            setSelected("skills");
+          }}
         >
-          Career
-        </Link>
-        <Link
-          href="/skills"
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-            pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+          Skills
+        </Scroll>
+        <Scroll
+          to="projects"
+          smooth={true}
+          duration={600}
+          offset={-30}
+          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+            selected === "projects" && "border-b-2 border-b-[#ff6d3f]"
           }`}
+          onClick={() => {
+            setSelected("projects");
+          }}
         >
           Projects
-        </Link>
-        <Link
-          href="/skills"
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-            pathname === "/skills" && "border-b-2 border-b-[#ff6d3f]"
+        </Scroll>
+        <Scroll
+          to="career"
+          smooth={true}
+          duration={600}
+          offset={-30}
+          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+            selected === "career" && "border-b-2 border-b-[#ff6d3f]"
           }`}
+          onClick={() => {
+            setSelected("career");
+          }}
         >
           Career
-        </Link>
+        </Scroll>
+        <Scroll
+          to="contact"
+          smooth={true}
+          duration={600}
+          offset={-30}
+          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+            selected === "contact" && "border-b-2 border-b-[#ff6d3f]"
+          }`}
+          onClick={() => {
+            setSelected("contact");
+          }}
+        >
+          Contact
+        </Scroll>
         <Link
           href="https://devwhisperer.gatsbyjs.io/"
           className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
-            pathname === "/blog" && "border-b-2 border-b-[#ff6d3f]"
+            selected === "blog" && "border-b-2 border-b-[#ff6d3f]"
           }`}
         >
           Blog

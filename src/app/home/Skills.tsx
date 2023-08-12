@@ -110,7 +110,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="h-full mx-auto pt-20 ml-5 lg:px-32 pb-10">
+      <div className="h-full mx-auto pt-20 ml-5 lg:px-32 pb-10" id="skills">
         <AnimateInView
           tag="div"
           variants={variants.stagger}
