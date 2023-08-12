@@ -5,42 +5,76 @@ import CompanyLogo from "./CompanyLogo";
 
 const Skills = () => {
   const skills = [
-    { id: 1, logo: "./tailwind-css.svg" },
-    { id: 2, logo: "./css.svg" },
-    { id: 3, logo: "./javascript.svg" },
-    { id: 4, logo: "./python.svg" },
-    { id: 5, logo: "./html.svg" },
-    { id: 6, logo: "./vue-js.svg" },
-    { id: 7, logo: "./typescript.svg" },
-    { id: 8, logo: "./vitejs.svg" },
-    { id: 9, logo: "./fastapi.svg" },
-    { id: 10, logo: "./nextjs.svg" },
-    { id: 11, logo: "./aws.svg" },
-    { id: 12, logo: "./aws-rds.svg" },
-    { id: 13, logo: "./aws-dynamodb.svg" },
-    { id: 14, logo: "./framer-motion.svg" },
-    { id: 15, logo: "./slack.svg" },
-    { id: 16, logo: "./github.svg" },
-    { id: 17, logo: "./nodejs.svg" },
-    { id: 18, logo: "./figma.svg" },
-    { id: 19, logo: "./firebase.svg" },
-    { id: 20, logo: "./storybook.svg" },
-    { id: 21, logo: "./jest.svg" },
-    { id: 22, logo: "./gatsby.svg" },
-    { id: 23, logo: "./redux.svg" },
-    { id: 24, logo: "./mysql.svg" },
-    { id: 25, logo: "./postgresql.svg" },
+    { id: 1, logo: "./tailwind-css.svg", src: "https://tailwindcss.com/docs" },
+    {
+      id: 2,
+      logo: "./css.svg",
+      src: "https://www.w3.org/Style/CSS/Overview.en.html",
+    },
+    {
+      id: 3,
+      logo: "./javascript.svg",
+      src: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    { id: 4, logo: "./python.svg", src: "https://docs.python.org/3/" },
+    {
+      id: 5,
+      logo: "./html.svg",
+      src: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    { id: 6, logo: "./vue-js.svg", src: "https://vuejs.org/v2/guide/" },
+    {
+      id: 7,
+      logo: "./typescript.svg",
+      src: "https://www.typescriptlang.org/docs/",
+    },
+    { id: 8, logo: "./vitejs.svg", src: "https://vitejs.dev/guide/" },
+    { id: 9, logo: "./fastapi.svg", src: "https://fastapi.tiangolo.com/" },
+    { id: 10, logo: "./nextjs.svg", src: "https://nextjs.org/docs" },
+    { id: 11, logo: "./aws.svg", src: "https://aws.amazon.com/documentation/" },
+    {
+      id: 12,
+      logo: "./aws-rds.svg",
+      src: "https://docs.aws.amazon.com/rds/index.html",
+    },
+    {
+      id: 13,
+      logo: "./aws-dynamodb.svg",
+      src: "https://docs.aws.amazon.com/dynamodb/index.html",
+    },
+    {
+      id: 14,
+      logo: "./framer-motion.svg",
+      src: "https://www.framer.com/api/motion/",
+    },
+    { id: 15, logo: "./slack.svg", src: "https://api.slack.com/" },
+    { id: 16, logo: "./github.svg", src: "https://docs.github.com/en" },
+    { id: 17, logo: "./nodejs.svg", src: "https://nodejs.org/en/docs/" },
+    { id: 18, logo: "./figma.svg", src: "https://www.figma.com/files/recent" },
+    { id: 19, logo: "./firebase.svg", src: "https://firebase.google.com/docs" },
+    { id: 20, logo: "./storybook.svg", src: "https://storybook.js.org/docs/" },
+    {
+      id: 21,
+      logo: "./jest.svg",
+      src: "https://jestjs.io/docs/getting-started",
+    },
+    { id: 22, logo: "./gatsby.svg", src: "https://www.gatsbyjs.com/docs/" },
+    {
+      id: 23,
+      logo: "./redux.svg",
+      src: "https://redux.js.org/introduction/getting-started",
+    },
+    { id: 24, logo: "./mysql.svg", src: "https://dev.mysql.com/doc/" },
+    {
+      id: 25,
+      logo: "./postgresql.svg",
+      src: "https://www.postgresql.org/docs/",
+    },
   ];
+
   return (
     <>
       <div className="h-full mx-auto pt-20 ml-5 lg:px-32 pb-10">
-        {/* <AnimateInView
-          tag="p"
-          variants={variants.fadeInDown}
-          className="mx-5 lg:my-10 text-4xl  font-bold lg:mx-auto lg:flex justify-center mb-10"
-        >
-          My Skills
-        </AnimateInView> */}
         <AnimateInView
           tag="div"
           variants={variants.stagger}
@@ -52,6 +86,7 @@ const Skills = () => {
                 variants={variants.fadeInDown}
                 image={skill.logo}
                 key={skill.id}
+                src={skill.src}
               />
             );
           })}
