@@ -1,5 +1,6 @@
 import React from "react";
 import AnimateInView from "../common/AnimateInView";
+import { motion } from "framer-motion";
 import variants from "../common/Animation";
 import Explanation from "../common/Explanation";
 
@@ -19,6 +20,7 @@ const Project = ({
   return (
     <div className="block lg:flex lg:justify-center lg:gap-32 mx-10 my-10">
       {reverse ? (
+        // portrait
         <>
           <Explanation
             subtitle={subtitle}
@@ -27,23 +29,32 @@ const Project = ({
             className="w-full lg:w-1/2 lg:flex lg:justify-end lg:mt-40"
             btn
           />
-          <AnimateInView
-            variants={variants.scaleUp}
-            tag="div"
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            variants={variants}
             className={`w-full lg:flex lg:justify-start lg:w-1/2`}
           >
             <img
               src="./colleagues.png"
               alt="colleagues"
-              className={`rounded-2xl mb-10 lg:mb-0 h-full w-full ${imgClassName}`}
+              className={`rounded-2xl mb-10 lg:mb-0 h-full  ${imgClassName} `}
             />
-          </AnimateInView>
+          </motion.div>
         </>
       ) : (
+        // Landscape
         <>
-          <AnimateInView
-            variants={variants.scaleUp}
-            tag="div"
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            variants={variants}
             className={`w-full lg:flex lg:justify-end lg:w-1/2`}
           >
             <img
@@ -51,7 +62,7 @@ const Project = ({
               alt="colleagues"
               className={`rounded-2xl mb-10 lg:mb-0 h-full  ${imgClassName}`}
             />
-          </AnimateInView>
+          </motion.div>
           <Explanation
             subtitle={subtitle}
             content={content}
