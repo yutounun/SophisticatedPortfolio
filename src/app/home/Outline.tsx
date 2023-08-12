@@ -36,7 +36,7 @@ const Outline = () => {
               >
                 <AiOutlineLine />
               </IconContext.Provider>
-              Konnichiwa !!
+              Konnichiwa !! I&apos;m Yuto
               <IconContext.Provider
                 value={{
                   color: "success",
@@ -51,8 +51,7 @@ const Outline = () => {
               development!
             </p>
             <p className="text-white text-xl font-bold my-5">
-              my name is Yuto and I am a full-stack developer with over three
-              years experiences.
+              Frontend / Full-stack Developer
             </p>
             <div className="flex justify-center lg:inline-block lg:w-full">
               <SquareButton className="bg-[#fc764d] hover:bg-[hsl(14,99%,60%)] h-5 w-1/2 lg:w-1/3">
