@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FormInput from "./FormInput";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { FaRegBuilding } from "react-icons/fa";
@@ -6,6 +6,7 @@ import { GiHumanTarget } from "react-icons/gi";
 import BasicButton from "../common/BasicButton";
 
 const Form = () => {
+  useState;
   return (
     <div className="border border-[#e7e9ee] bg-white rounded-2xl h-full font-sans">
       <form className="mx-10 my-10 flex flex-wrap justify-center gap-10">
