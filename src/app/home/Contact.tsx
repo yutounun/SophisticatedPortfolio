@@ -101,7 +101,7 @@ const Contact = () => {
         <AnimateInView
           tag="div"
           variants={variants.fadeInDown}
-          className="lg:w-1/2 my-20"
+          className="lg:w-1/2 lg:my-20"
         >
           <Form />
         </AnimateInView>

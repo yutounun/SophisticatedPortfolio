@@ -32,7 +32,7 @@ const Project = ({
             url={url}
             content={content}
             title={title}
-            className="w-full lg:w-1/2 lg:flex lg:justify-end lg:mt-40"
+            className="w-full lg:w-1/2 lg:flex lg:justify-end lg:mt-40 mb-10"
             btn
           />
           <motion.div

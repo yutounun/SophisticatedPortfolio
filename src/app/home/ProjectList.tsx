@@ -10,7 +10,7 @@ const ProjectList = () => {
           subtitle="Responsive Static Website"
           title="Static Website Template showcase."
           content="A showcase of my expertise in crafting organized and sophisticated static web pages."
-          imgClassName="lg:h-2/3 lg:w-10/12 mt-40  border border-1 border-success "
+          imgClassName="lg:h-2/3 lg:w-10/12 lg:mt-40  border border-1 border-success "
           src="webpage.png"
           url="https://website-sigma-ruddy-88.vercel.app/home"
         />
@@ -32,7 +32,7 @@ const ProjectList = () => {
           title="Workout tracker"
           url="https://doloveworkout.com/login"
           content="An app to monitor workouts and dietary intake"
-          imgClassName="lg:h-5/12 lg:w-1/3 lg:ml-20"
+          imgClassName="h-4/12 w-7/12 mx-auto lg:h-5/12 lg:w-1/3 lg:ml-20"
         />
 
         {/* SplitSip */}
@@ -42,7 +42,7 @@ const ProjectList = () => {
           title="SplitSip"
           url="https://spectacular-boba-b2aad2.netlify.app/"
           content="An app calculating the payment amount for each member at drinking party"
-          imgClassName="lg:h-5/12 lg:w-1/3 lg:mr-40"
+          imgClassName="h-4/12 w-7/12 mx-auto lg:h-5/12 lg:w-1/3 lg:mr-40"
         />
       </div>
     </>

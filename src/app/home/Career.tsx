@@ -5,7 +5,7 @@ import CareerList from "./CareerList";
 
 const Career = () => {
   return (
-    <div id="career" className="py-10 px-52 lg:py-20 bg-gray-10">
+    <div id="career" className="py-10 px-10 lg:px-52 lg:py-20 bg-gray-10">
       <Explanation
         subtitle="Career"
         url="url"

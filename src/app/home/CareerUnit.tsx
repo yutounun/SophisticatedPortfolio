@@ -25,11 +25,11 @@ const CareerUnit = (props: PropTypes) => {
   return (
     <motion.div
       whileHover={{
-        scale: 1.1,
+        scale: 1.03,
         transition: { duration: 0.2 },
       }}
       whileTap={{ scale: 0.9 }}
-      className={`${props.className} hover:bg-[#ffc6b5] hover:rounded-3xl hover:border px-4 py-5 border-white`}
+      className={`${props.className} hover:bg-[#ffc6b5] hover:rounded-3xl hover:border lg:px-4 py-5 border-white`}
     >
       <Link href={props.url}>
         <div className="text-[#6F7278] text-xl font-semibold">
