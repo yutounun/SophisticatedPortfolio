@@ -17,8 +17,9 @@ const Form = () => {
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
+  const sendEmail = () => {
+    // console.log("submit");
+    // e.preventDefault();
 
     form.current &&
       emailjs.sendForm(serviceId, templateId, form.current, userId).then(
@@ -40,7 +41,7 @@ const Form = () => {
   };
 
   return (
-    <div className="border border-[#e7e9ee] bg-white rounded-2xl h-full font-sans">
+    <div className="lg:mx-0 lg:border lg:border-[#e7e9ee] lg:bg-white rounded-2xl h-full font-sans">
       <form
         className="mx-10 my-10 flex flex-wrap justify-center gap-10"
         ref={form}
@@ -82,8 +83,9 @@ const Form = () => {
           className="w-10/12 h-32"
           inputClassName="w-11/12"
         />
-        <div className="flex justify-center items lg:inline-block lg:w-full">
+        <div className="flex justify-center items lg:inline-block w-2/3 lg:w-full">
           <motion.div
+            onClick={sendEmail}
             whileHover={{
               scale: 1.1,
               transition: { duration: 0.2 },

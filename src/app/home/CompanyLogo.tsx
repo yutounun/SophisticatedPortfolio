@@ -24,7 +24,7 @@ const CompanyLogo = ({
       <img
         src={image}
         alt={image}
-        className={`h-20 w-32 lg:h-32 kg:w-40 p-2 ${
+        className={`h-20 w-20 lg:h-32 kg:w-40 p-2 ${
           fav && "border-2 border-success rounded-full"
         } `}
       ></img>

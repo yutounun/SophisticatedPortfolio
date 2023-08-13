@@ -49,7 +49,7 @@ const Contact = () => {
                   <IconContext.Provider
                     value={{
                       color: "white",
-                      className: "text-2xl lg:text-4xl",
+                      className: "text-4xl mr-2",
                     }}
                   >
                     <MdMail />
@@ -64,11 +64,11 @@ const Contact = () => {
               </motion.button>
             </div>
             {/* Accounts */}
-            <div className="flex gap-4 ml-5 mt-3">
+            <div className="flex gap-4 ml-5 mt-3 justify-center lg:justify-start">
               <IconContext.Provider
                 value={{
                   color: "#292c32",
-                  className: "text-2xl lg:text-4xl",
+                  className: "text-4xl",
                 }}
               >
                 <Link href="https://github.com/yutounun">
@@ -78,7 +78,7 @@ const Contact = () => {
               <IconContext.Provider
                 value={{
                   color: "#292c32",
-                  className: "text-2xl lg:text-4xl",
+                  className: "text-4xl",
                 }}
               >
                 <Link href="https://www.linkedin.com/in/yuto-ichihara-426800217/">
@@ -88,7 +88,7 @@ const Contact = () => {
               <IconContext.Provider
                 value={{
                   color: "#292c32",
-                  className: "text-2xl lg:text-4xl",
+                  className: "text-4xl",
                 }}
               >
                 <Link href="https://twitter.com/Robin_Ich_y">
@@ -101,7 +101,7 @@ const Contact = () => {
         <AnimateInView
           tag="div"
           variants={variants.fadeInDown}
-          className="lg:w-1/2"
+          className="lg:w-1/2 my-20"
         >
           <Form />
         </AnimateInView>

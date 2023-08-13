@@ -110,11 +110,11 @@ const Skills = () => {
 
   return (
     <>
-      <div className="h-full mx-auto pt-20 ml-5 lg:px-32 pb-10" id="skills">
+      <div className="h-full mx-auto pt-20 lg:ml-5 lg:px-32 pb-10" id="skills">
         <AnimateInView
           tag="div"
           variants={variants.stagger}
-          className="w-full flex flex-wrap gap-8 mx-5 lg:mx-0 lg:gap-16"
+          className="lg:w-full flex flex-wrap justify-center gap-8 mx-5 lg:mx-0 lg:gap-16"
         >
           {skills.map((skill) => {
             return (
