@@ -1,15 +1,12 @@
 "use client";
 
 import React from "react";
-import CompanyLogo from "./CompanyLogo";
-import AnimateInView from "../common/AnimateInView";
-import variants from "../common/Animation";
 import { motion } from "framer-motion";
-import Explanation from "../common/Explanation";
 import Outline from "./Outline";
 import ProjectList from "./ProjectList";
 import Contact from "./Contact";
 import Skills from "./Skills";
+import Career from "./Career";
 
 export default function Home() {
   return (
@@ -22,6 +19,9 @@ export default function Home() {
 
         {/* project list */}
         <ProjectList />
+
+        {/* Career */}
+        <Career />
 
         {/* contact page */}
         <Contact />
