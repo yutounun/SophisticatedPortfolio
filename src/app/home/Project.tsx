@@ -13,6 +13,7 @@ const Project = ({
   src,
   imgClassName,
   url,
+  gitRepo,
 }: {
   reverse?: boolean;
   subtitle: string;
@@ -21,6 +22,7 @@ const Project = ({
   src: string;
   imgClassName: string;
   url: string;
+  gitRepo?: string;
 }) => {
   return (
     <div className="block lg:flex lg:justify-center lg:gap-32 mx-10 my-10">
@@ -34,6 +36,7 @@ const Project = ({
             title={title}
             className="w-full lg:w-1/2 lg:flex lg:justify-end lg:mt-40 mb-10"
             btn
+            gitRepo={gitRepo}
           />
           <motion.div
             whileHover={{
@@ -77,6 +80,7 @@ const Project = ({
             subtitle={subtitle}
             content={content}
             title={title}
+            gitRepo={gitRepo}
             url={url}
             className="w-full lg:w-1/2 lg:flex lg:justify-start lg:mt-40"
             btn

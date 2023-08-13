@@ -3,6 +3,7 @@ import Link from "next/link";
 import { IconContext } from "react-icons";
 import BasicButton from "./BasicButton";
 import { AiOutlineLine } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 type PropType = {
   subtitle: string;
@@ -11,6 +12,7 @@ type PropType = {
   className: string;
   btn?: boolean;
   url: string;
+  gitRepo?: string;
 };
 
 const Explanation = ({
@@ -20,6 +22,7 @@ const Explanation = ({
   content,
   btn,
   url,
+  gitRepo,
 }: PropType) => {
   return (
     <div className={`${className}`}>
@@ -32,9 +35,23 @@ const Explanation = ({
           </IconContext.Provider>
           <span>{subtitle}</span>
         </p>
-        <h2 className="lg:mx-0 w-full font-bold  text-primary tracking-wide text-4xl my-5">
-          {title}
-        </h2>
+        <div className="flex gap-4">
+          <h2 className="lg:mx-0 w-full font-bold  text-primary tracking-wide text-4xl my-5">
+            {title}
+          </h2>
+          {gitRepo && (
+            <IconContext.Provider
+              value={{
+                color: "#292c32",
+                className: "text-4xl",
+              }}
+            >
+              <Link href={gitRepo}>
+                <AiFillGithub />
+              </Link>
+            </IconContext.Provider>
+          )}
+        </div>
         <p className="leading-relaxed lg:mx-0 font-medium text-[#6F7278] text-[18px] mb-10">
           {content}
         </p>

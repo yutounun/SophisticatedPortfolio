@@ -13,6 +13,7 @@ const ProjectList = () => {
           imgClassName="lg:h-2/3 lg:w-10/12 lg:mt-40  border border-1 border-success "
           src="webpage.png"
           url="https://website-sigma-ruddy-88.vercel.app/home"
+          gitRepo="https://github.com/yutounun/website"
         />
         {/* <Project
           subtitle="Static Website"
@@ -33,6 +34,7 @@ const ProjectList = () => {
           url="https://doloveworkout.com/login"
           content="An app to monitor workouts and dietary intake"
           imgClassName="h-4/12 w-7/12 mx-auto lg:h-5/12 lg:w-1/3 lg:ml-20"
+          gitRepo="https://github.com/yutounun/WorkOutTrackingApp"
         />
 
         {/* SplitSip */}
@@ -43,6 +45,7 @@ const ProjectList = () => {
           url="https://spectacular-boba-b2aad2.netlify.app/"
           content="An app calculating the payment amount for each member at drinking party"
           imgClassName="h-4/12 w-7/12 mx-auto lg:h-5/12 lg:w-1/3 lg:mr-40"
+          gitRepo="https://github.com/yutounun/NomiKan"
         />
       </div>
     </>
