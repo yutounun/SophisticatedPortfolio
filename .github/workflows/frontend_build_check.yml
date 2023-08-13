@@ -26,4 +26,4 @@ jobs:
         run: npm i
 
       - name: Build dist 🔨
-        run: npm run build:dev
+        run: npm run build
