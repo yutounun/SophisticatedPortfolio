@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { IconContext } from "react-icons";
-import { AiFillCheckCircle, AiOutlineLine } from "react-icons/ai";
+import { AiOutlineLine } from "react-icons/ai";
 import { GiJapan } from "react-icons/gi";
 import Link from "next/link";
 import AnimateInView from "../common/AnimateInView";

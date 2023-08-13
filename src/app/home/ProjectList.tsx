@@ -28,7 +28,7 @@ const ProjectList = () => {
         <Project
           reverse
           src="workout-tracker.png"
-          subtitle="PWA Web Application"
+          subtitle="PWA FullStack Web Application"
           title="Workout tracker"
           url="https://doloveworkout.com/login"
           content="An app to monitor workouts and dietary intake"

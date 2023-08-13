@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import { IconContext } from "react-icons";
 import BasicButton from "./BasicButton";
+import { AiOutlineLine } from "react-icons/ai";
 
 type PropType = {
   subtitle: string;
@@ -22,8 +24,13 @@ const Explanation = ({
   return (
     <div className={`${className}`}>
       <div className="lg:flex lg:flex-col lg:w-2/3">
-        <p className="lg:mx-0 font-bold  text-[#055F5B] text-lg">
-          - {subtitle}
+        <p className="lg:mx-0 font-bold flex items-center text-[#055F5B] text-lg">
+          <IconContext.Provider
+            value={{ color: "primary", className: "mr-3 text-xl" }}
+          >
+            <AiOutlineLine />
+          </IconContext.Provider>
+          <span>{subtitle}</span>
         </p>
         <h2 className="lg:mx-0 w-full font-bold  text-primary tracking-wide text-4xl my-5">
           {title}

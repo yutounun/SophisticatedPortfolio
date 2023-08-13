@@ -44,7 +44,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
               offset={-30}
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+              className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
                 selected === "about" && "border-b-2 border-b-[#ff6d3f]"
               }`}
               onClick={() => {
@@ -58,7 +58,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
               offset={-30}
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+              className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
                 selected === "skills" && "border-b-2 border-b-[#ff6d3f]"
               }`}
               onClick={() => {
@@ -72,7 +72,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
               offset={-30}
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+              className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
                 selected === "projects" && "border-b-2 border-b-[#ff6d3f]"
               }`}
               onClick={() => {
@@ -86,7 +86,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
               offset={-30}
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+              className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
                 selected === "home" && "border-b-2 border-b-[#ff6d3f]"
               }`}
               onClick={() => {
@@ -100,7 +100,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
               offset={-30}
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
+              className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white h-1/8 ${
                 selected === "/contact" && "border-b-2 border-b-[#ff6d3f]"
               }`}
               onClick={() => {
@@ -111,7 +111,7 @@ const Navbar = () => {
             </Scroll>
             <Link
               href="https://devwhisperer.gatsbyjs.io/"
-              className={`text-xl ml-7 w-1/3 font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
+              className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
                 selected === "blog" && "border-b-2 border-b-[#ff6d3f]"
               }`}
             >
@@ -133,7 +133,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={-30}
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+          className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
             selected === "about" && "border-b-2 border-b-[#ff6d3f]"
           }`}
           onClick={() => {
@@ -147,7 +147,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={-30}
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+          className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
             selected === "skills" && "border-b-2 border-b-[#ff6d3f]"
           }`}
           onClick={() => {
@@ -161,7 +161,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={-30}
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+          className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
             selected === "projects" && "border-b-2 border-b-[#ff6d3f]"
           }`}
           onClick={() => {
@@ -175,7 +175,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={-30}
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+          className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
             selected === "career" && "border-b-2 border-b-[#ff6d3f]"
           }`}
           onClick={() => {
@@ -189,7 +189,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={-30}
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
+          className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white ${
             selected === "contact" && "border-b-2 border-b-[#ff6d3f]"
           }`}
           onClick={() => {
@@ -200,7 +200,7 @@ const Navbar = () => {
         </Scroll>
         <Link
           href="https://devwhisperer.gatsbyjs.io/"
-          className={`text-xl ml-7 my-auto  font-normal hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
+          className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
             selected === "blog" && "border-b-2 border-b-[#ff6d3f]"
           }`}
         >
