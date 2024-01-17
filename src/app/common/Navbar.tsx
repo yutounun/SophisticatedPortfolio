@@ -110,7 +110,7 @@ const Navbar = () => {
               Contact
             </Scroll>
             <Link
-              href="https://devwhisperer.gatsbyjs.io/"
+              href="https://robin-blog-mu.vercel.app/"
               className={`text-xl ml-7 w-1/3 font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
                 selected === "blog" && "border-b-2 border-b-[#ff6d3f]"
               }`}
@@ -199,7 +199,7 @@ const Navbar = () => {
           Contact
         </Scroll>
         <Link
-          href="https://devwhisperer.gatsbyjs.io/"
+          href="https://robin-blog-mu.vercel.app/"
           className={`text-xl ml-7 my-auto  font-semibold hover:border-b-2 hover:border-b-[#ff6d3f] hover:bg-white hover: ${
             selected === "blog" && "border-b-2 border-b-[#ff6d3f]"
           }`}
