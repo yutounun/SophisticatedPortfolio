@@ -14,7 +14,7 @@ const Career = () => {
         className="w-full lg:flex"
       />
       <Link
-        href="https://www.canva.com/design/DAFjTqbd5eE/7-3UPLsbxCkbp3DULWMThA/edit?utm_content=DAFjTqbd5eE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        href="https://drive.google.com/file/d/1gO-ez0aTfTLgvfPh4NIBNnFS9-JR_8KI/view?usp=sharing"
         className="text-xl font-semibold rounded-lg w-80 mb-10"
       >
         <span className="mb-5">{`>`} open my resume</span>
