@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 function AnimateInView({
   children,
   variants,
-  tag,
+  tag = "div",
   className,
   hoverScaleUp,
 }: {
@@ -50,7 +50,7 @@ function AnimateInView({
       {children}
     </motion.div>
   ) : (
-    <motion.p
+    <motion.div
       ref={ref}
       animate={controls}
       initial="initial"
@@ -59,7 +59,7 @@ function AnimateInView({
       className={className}
     >
       {children}
-    </motion.p>
+    </motion.div>
   );
 }
 
