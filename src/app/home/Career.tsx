@@ -15,7 +15,7 @@ const Career = () => {
         className="w-full lg:flex"
       />
       <Link
-        href="https://drive.google.com/file/d/1gO-ez0aTfTLgvfPh4NIBNnFS9-JR_8KI/view?usp=sharing"
+        href="https://drive.google.com/file/d/132fy9P9HZEABCewmGAL0IRi5JfEFysuR/view?usp=sharing"
         className="text-xl font-semibold rounded-lg w-80 mb-10"
       >
         <span className="mb-5 flex items-center gap-2">
