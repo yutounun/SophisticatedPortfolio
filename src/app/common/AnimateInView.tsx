@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { isMobile } from "react-device-detect";
 
-const AnimateInView = React.memo(function AnimateInView({
+function AnimateInView({
   children,
   variants,
   tag = "div",
@@ -64,6 +64,6 @@ const AnimateInView = React.memo(function AnimateInView({
       {children}
     </motion.div>
   );
-});
+}
 
 export default AnimateInView;
