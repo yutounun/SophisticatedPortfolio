@@ -3,6 +3,7 @@ import * as React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { isMobile } from "react-device-detect";
 
 function AnimateInView({
   children,
@@ -29,7 +30,9 @@ function AnimateInView({
     }
   }, [controls, inView]);
 
-  return tag === "div" ? (
+  return isMobile ? (
+    { children }
+  ) : tag === "div" ? (
     <motion.div
       ref={ref}
       animate={controls}
