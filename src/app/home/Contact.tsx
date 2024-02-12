@@ -11,6 +11,7 @@ import {
 import Form from "./Form";
 import { IconContext } from "react-icons";
 import { motion } from "framer-motion";
+import { AiOutlineLine } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -25,8 +26,13 @@ const Contact = () => {
           className="lg:w-5/12 lg:flex justify-center mb-10 lg:mb-0"
         >
           <div className="">
-            <p className="mx-10 lg:mx-0 font-bold  text-[#055F5B] text-lg">
-              - CONTACT
+            <p className="mx-10 lg:mx-0 font-bold  text-[#055F5B] text-lg flex items-center gap-2">
+              <IconContext.Provider
+                value={{ color: "primary", className: "mr-3 text-xl" }}
+              >
+                <AiOutlineLine />
+              </IconContext.Provider>{" "}
+              CONTACT
             </p>
             <h2 className="mx-10 lg:mx-0 w-10/12 font-bold  text-primary tracking-wide text-4xl my-5">
               I am look forward to hearing your lovely message!
@@ -64,7 +70,7 @@ const Contact = () => {
               </motion.button>
             </div>
             {/* Accounts */}
-            <div className="flex gap-4 ml-5 mt-3 justify-center lg:justify-start">
+            <div className="flex gap-4 lg:ml-5 ml-0 mt-3 justify-center lg:justify-start">
               <IconContext.Provider
                 value={{
                   color: "#292c32",

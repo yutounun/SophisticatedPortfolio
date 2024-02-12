@@ -13,7 +13,7 @@ type PropType = {
   btn?: boolean;
   url: string;
   gitRepo?: string;
-  tags: string[];
+  tags?: string[];
 };
 
 const Explanation = ({
