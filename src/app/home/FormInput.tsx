@@ -22,7 +22,7 @@ const FormInput = ({
       <input
         type="text"
         name={name}
-        className={`pl-3 h-full pr-10 py-2 border rounded ${inputClassName}`}
+        className={`pl-3 h-full pr-10 py-2 border rounded ${inputClassName} bg-white text-black`}
         placeholder={placeholder}
       />
       <IconContext.Provider
