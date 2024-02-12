@@ -5,6 +5,10 @@ const nextConfig = {
   },
   // @see https://beta.nextjs.org/docs/configuring/static-export#configuration
   output: "export",
+  images: {
+    loader: "custom",
+    domains: ["images.microcms-assets.io"],
+  },
 };
 
 module.exports = nextConfig;

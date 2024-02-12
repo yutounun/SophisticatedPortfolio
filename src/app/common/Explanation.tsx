@@ -13,6 +13,7 @@ type PropType = {
   btn?: boolean;
   url: string;
   gitRepo?: string;
+  tags: string[];
 };
 
 const Explanation = ({
@@ -23,6 +24,7 @@ const Explanation = ({
   btn,
   url,
   gitRepo,
+  tags,
 }: PropType) => {
   return (
     <div className={`${className}`}>
@@ -52,9 +54,25 @@ const Explanation = ({
             </IconContext.Provider>
           )}
         </div>
+
+        {/* Main Content */}
         <p className="leading-relaxed lg:mx-0 font-medium text-[#6F7278] text-[18px] mb-10">
           {content}
         </p>
+
+        {/* Tech Stack */}
+        <div className="flex flex-wrap gap-2 lg:mb-7">
+          {tags?.map((tag) => (
+            <span
+              key={tag}
+              className="lg:my-2 border-2 border-[#caccd1] font-semibold px-3 py-1 rounded-2xl"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        {/* Explore Button */}
         {btn && (
           <Link href={url}>
             <BasicButton className="bg-[#055f5b] hover:bg-[#0c1c1b] w-60 h-12">

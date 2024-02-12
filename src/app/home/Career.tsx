@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Explanation from "../common/Explanation";
 import CareerList from "./CareerList";
+import { FaArrowRightToBracket } from "react-icons/fa6";
 
 const Career = () => {
   return (
@@ -17,7 +18,9 @@ const Career = () => {
         href="https://drive.google.com/file/d/1gO-ez0aTfTLgvfPh4NIBNnFS9-JR_8KI/view?usp=sharing"
         className="text-xl font-semibold rounded-lg w-80 mb-10"
       >
-        <span className="mb-5">{`>`} open my resume</span>
+        <span className="mb-5 flex items-center gap-2">
+          <FaArrowRightToBracket /> open my resume
+        </span>
       </Link>
       <CareerList className="mt-5" />
     </div>

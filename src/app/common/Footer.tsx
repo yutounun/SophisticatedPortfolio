@@ -2,7 +2,6 @@ import React from "react";
 
 import Link from "next/link";
 
-import Logo from "../../../public/logo.svg";
 import FooterNavi from "./FooterNavi";
 
 const Footer = () => {

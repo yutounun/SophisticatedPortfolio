@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { HiOutlineInformationCircle } from "react-icons/hi";
 import FormInput from "./FormInput";
+import { MdOutlineEditNote } from "react-icons/md";
 import { AiOutlineMail, AiOutlineSend } from "react-icons/ai";
 import { FaRegBuilding } from "react-icons/fa";
 import { GiHumanTarget } from "react-icons/gi";
@@ -53,7 +55,7 @@ const Form = () => {
           className="w-10/12"
           inputClassName="w-11/12"
         >
-          <GiHumanTarget />
+          <GiHumanTarget size="1.5em" />
         </FormInput>
         <FormInput
           name="email"
@@ -61,7 +63,7 @@ const Form = () => {
           className="w-10/12"
           inputClassName="w-11/12"
         >
-          <AiOutlineMail />
+          <AiOutlineMail size="1.5em" />
         </FormInput>
         <FormInput
           name="company"
@@ -69,20 +71,24 @@ const Form = () => {
           className="w-10/12"
           inputClassName="w-11/12"
         >
-          <FaRegBuilding />
+          <FaRegBuilding size="1.5em" />
         </FormInput>
         <FormInput
           name="title"
           placeholder="What is it about?"
           className="w-10/12"
           inputClassName="w-11/12"
-        />
+        >
+          <HiOutlineInformationCircle size="1.5em" />
+        </FormInput>
         <FormInput
           name="content"
           placeholder="Your message..."
           className="w-10/12 h-32"
           inputClassName="w-11/12"
-        />
+        >
+          <MdOutlineEditNote size="1.5em" />
+        </FormInput>
         <div className="flex justify-center items lg:inline-block w-2/3 lg:w-full">
           <motion.div
             onClick={sendEmail}

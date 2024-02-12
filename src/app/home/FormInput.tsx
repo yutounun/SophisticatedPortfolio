@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { IconContext } from "react-icons";
+import { GiHumanTarget } from "react-icons/gi";
 
 type PropTypes = {
   placeholder: string;
@@ -17,21 +18,24 @@ const FormInput = ({
   name,
 }: PropTypes) => {
   return (
-    <span
-      className={`border border-[#caccd1] bg-white flex justify-between items-center rounded-2xl h-16 ${className}`}
-    >
+    <div className={`${className} relative`}>
       <input
         type="text"
-        className={`h-full ml-3 ${inputClassName}`}
-        placeholder={placeholder}
         name={name}
+        className={`pl-3 h-full pr-10 py-2 border rounded ${inputClassName}`}
+        placeholder={placeholder}
       />
       <IconContext.Provider
-        value={{ color: "#caccd1", className: "text-3xl mr-3" }}
+        value={{
+          className:
+            "absolute right-3 top-1/2 transform -translate-y-1/2 text-lg",
+        }}
       >
-        <div>{children}</div>
+        <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+          {children}
+        </div>
       </IconContext.Provider>
-    </span>
+    </div>
   );
 };
 

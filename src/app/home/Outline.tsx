@@ -55,7 +55,12 @@ const Outline = () => {
             </p>
             <div className="flex justify-center lg:inline-block lg:w-full">
               <SquareButton className="bg-[#fc764d] hover:bg-[hsl(14,99%,60%)] h-5 w-1/2 lg:w-1/3">
-                <Link href="/about">Learn more</Link>
+                <Link
+                  href="https://robin-blog-mu.vercel.app/"
+                  className="w-full"
+                >
+                  Learn more
+                </Link>
               </SquareButton>
             </div>
           </AnimateInView>

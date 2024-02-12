@@ -1,5 +1,4 @@
 import React from "react";
-import AnimateInView from "../common/AnimateInView";
 import { motion } from "framer-motion";
 import variants from "../common/Animation";
 import Explanation from "../common/Explanation";
@@ -14,6 +13,7 @@ const Project = ({
   imgClassName,
   url,
   gitRepo,
+  tags,
 }: {
   reverse?: boolean;
   subtitle: string;
@@ -23,6 +23,7 @@ const Project = ({
   imgClassName: string;
   url: string;
   gitRepo?: string;
+  tags: string[];
 }) => {
   return (
     <div className="block lg:flex lg:justify-center lg:gap-32 mx-10 my-10">
@@ -37,6 +38,7 @@ const Project = ({
             className="w-full lg:w-1/2 lg:flex lg:justify-end lg:mt-40 mb-10"
             btn
             gitRepo={gitRepo}
+            tags={tags}
           />
           <motion.div
             whileHover={{
@@ -80,6 +82,7 @@ const Project = ({
             subtitle={subtitle}
             content={content}
             title={title}
+            tags={tags}
             gitRepo={gitRepo}
             url={url}
             className="w-full lg:w-1/2 lg:flex lg:justify-start lg:mt-40"
