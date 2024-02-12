@@ -12,11 +12,11 @@ const Navbar = () => {
   const pathname = usePathname();
   const [selected, setSelected] = useState("about");
   return (
-    <div className="h-32 lg:flex justify-between border-b sticky w-full top-0 z-50 bg-white">
+    <div className="lg:h-32 h-20 lg:flex justify-between border-b sticky w-full top-0 z-50 bg-white">
       {/* Burger Menu */}
       {isOpen}
       <div
-        className="lg:hidden absolute top-12 right-5"
+        className="lg:hidden absolute lg:top-12 top-8 right-5"
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg

@@ -61,7 +61,7 @@ const Explanation = ({
         </p>
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2 lg:mb-7">
+        <div className="flex flex-wrap gap-2 lg:mb-7 mb-10">
           {tags?.map((tag) => (
             <span
               key={tag}
