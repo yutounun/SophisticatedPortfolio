@@ -13,27 +13,17 @@ const CareerList = (props: PropTypes) => {
         {
           key: "key1",
           value:
-            "Improved user experience by crafting several essential pages and fixing bugs, leveraging TypeScript,Vue2, Jest, and Nuxt.js, thereby ensuring a seamless and stable user experience.",
+            "Spearheaded the upgrade from Nuxt2 to Nuxt3 for a business idea solicitation platform. This was accomplished through significant improvements in UI / UX, along with the introduction of new features like notification and restriction functionalities. Utilized a comprehensive stack including Vue2,3, Python, FastAPI, and AWS services (DynamoDB, CloudFormation, Lambda).",
         },
         {
           key: "key2",
           value:
-            "Streamlined development processes by proposing and implementing Github Actions and varioustemplates such as a PR template, significantly contributing to meeting project deadlines.",
+            "Led the front-end development of a travel planning application, focusing on a user-friendly interface that allows for easy sharing of travel plans among friends and efficient map searches to calculate travel times. This project was built using Vue3 and integrated with the Google Map API, leveraging Tailwind CSS for responsive design.",
         },
         {
           key: "key3",
           value:
-            "Enhanced customer experience by designing and implementing APIs using Python, FastAPI, and DynamoDB, providing users with new and improved functionalities.",
-        },
-        {
-          key: "key4",
-          value:
-            "Successfully managed a team of 6 members as a project manager, and maintained excellent clientrelationships, ensuring client needs were met and expectations exceeded. ",
-        },
-        {
-          key: "key5",
-          value:
-            "Directed a team of 8 frontend developers in an Agile environment, closely collaborating with the designand backend teams to design REST APIs and implement double the expected functionalities in a travelplanning POC application using Vue3 and Tailwind.css.",
+            "Contributed as a full-stack developer to an internal AI chat application designed for client-specific use, incorporating advanced text categorization and search functionalities through the integration of Google Cloud's Vertex AI and PaLM2, and LangChain for AI-driven interactions. The development process involved using React and NodeJS, including the implementation of text filtering and soft deletion rules.",
         },
       ],
       tags: [
@@ -68,22 +58,12 @@ const CareerList = (props: PropTypes) => {
         {
           key: "key1",
           value:
-            "Developed responsive web pages working for both PC and mobile, improving user experience andaccessibility.",
+            "Contributed as a front-end developer to an antibody testing app, facilitating test result storage and method guidance, utilizing AWS (Cognito, Lambda, Serverless, IAM, CloudWatch), Vue2, and GitHub for a seamless user experience.",
         },
         {
           key: "key2",
           value:
-            "Led a team of 4 newcomers to transit from existing infrastructure to a serverless architecture using AWSservices such as CloudFormation, DynamoDB, Lambda, and API Gateway for the company's cafeteriafood booking service, optimizing system performance and scalability, and reducing AWS service costs by50%",
-        },
-        {
-          key: "key3",
-          value:
-            "Automated API testing using shell-script, reducing the time of API testing by more than 99%.",
-        },
-        {
-          key: "key4",
-          value:
-            "Implemented APIs using Python and Django, providing users new functionalities.",
+            "Automated testing for a widely used payment card API across Japanese supermarkets, initially leveraging PostMan, then transitioning to Shell Script to eliminate environmental discrepancies, achieving a 99% reduction in testing time.",
         },
       ],
       from: "2020/07",
