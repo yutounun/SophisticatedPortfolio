@@ -31,7 +31,7 @@ function AnimateInView({
   }, [controls, inView]);
 
   return isMobile ? (
-    { children }
+    <>{children}</>
   ) : tag === "div" ? (
     <motion.div
       ref={ref}
