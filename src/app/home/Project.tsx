@@ -47,7 +47,7 @@ const Project = ({
             }}
             whileTap={{ scale: 0.9 }}
             variants={variants.fadeInDown}
-            className={`w-full lg:flex lg:justify-start lg:w-1/2`}
+            className={`w-full lg:flex lg:justify-start lg:w-1/2 hidden`}
           >
             <Link href={url} className="h-full w-full">
               <img
@@ -68,7 +68,7 @@ const Project = ({
             }}
             whileTap={{ scale: 0.9 }}
             variants={variants.fadeInDown}
-            className={`w-full lg:w-1/2`}
+            className={`w-full lg:w-1/2 hidden`}
           >
             <Link href={url} className="h-full w-full lg:flex lg:justify-end">
               <img
